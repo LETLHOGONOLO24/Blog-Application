@@ -11,29 +11,49 @@ function App() {
           <a href="">Register</a>
         </nav>
       </header>
+
       <div className="post">
-        <img src="https://techcrunch.com/wp-content/uploads/2022/12/lawnmower-Large.jpeg?w=1390&crop=1" alt=""/>
+        <div className="image">
+          <img src="https://techcrunch.com/wp-content/uploads/2022/12/lawnmower-Large.jpeg?w=1390&crop=1" alt=""/>
+        </div>
         <div className="texts">
           <h2>Full-house battery backup coming later this year</h2>
-          <p>Today at its special launch event, home backup power giant EcoFlow launched a flurry of new products, including a “Whole-Home Backup Power Solution.</p>
+          <p className="info">
+            <a className="author">Letlhogonolo Chauke</a>
+            <time>2023-12-29 14:15</time>
+          </p>
+          <p className="summary">Today at its special launch event, home backup power giant EcoFlow launched a flurry of new products, including a “Whole-Home Backup Power Solution.</p>
         </div>
       </div>
 
       <div className="post">
-        <img src="https://techcrunch.com/wp-content/uploads/2022/12/lawnmower-Large.jpeg?w=1390&crop=1" alt=""/>
+        <div className="image">
+          <img src="https://techcrunch.com/wp-content/uploads/2022/12/lawnmower-Large.jpeg?w=1390&crop=1" alt=""/>
+        </div>
         <div className="texts">
           <h2>Full-house battery backup coming later this year</h2>
-          <p>Today at its special launch event, home backup power giant EcoFlow launched a flurry of new products, including a “Whole-Home Backup Power Solution.</p>
+          <p className="info">
+            <a className="author">Letlhogonolo Chauke</a>
+            <time>2023-12-29 14:15</time>
+          </p>
+          <p className="summary">Today at its special launch event, home backup power giant EcoFlow launched a flurry of new products, including a “Whole-Home Backup Power Solution.</p>
         </div>
       </div>
 
       <div className="post">
-        <img src="https://techcrunch.com/wp-content/uploads/2022/12/lawnmower-Large.jpeg?w=1390&crop=1" alt=""/>
+        <div className="image">
+          <img src="https://techcrunch.com/wp-content/uploads/2022/12/lawnmower-Large.jpeg?w=1390&crop=1" alt=""/>
+        </div>
         <div className="texts">
           <h2>Full-house battery backup coming later this year</h2>
-          <p>Today at its special launch event, home backup power giant EcoFlow launched a flurry of new products, including a “Whole-Home Backup Power Solution.</p>
+          <p className="info">
+            <a className="author">Letlhogonolo Chauke</a>
+            <time>2023-12-29 14:15</time>
+          </p>
+          <p className="summary">Today at its special launch event, home backup power giant EcoFlow launched a flurry of new products, including a “Whole-Home Backup Power Solution.</p>
         </div>
       </div>
+      
     </main>
   );
 }
