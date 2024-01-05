@@ -100,4 +100,11 @@ app.get('/post', async (req,res) => {
     );
 });
 
+// endpoint for post pages
+app.get('/post/:id', async (req,res) => {
+    const {id} = req.params;
+    const postDoc = await Post.findById(id).populate('author', ['username']);
+    res.json(postDoc)
+});
+
 app.listen(4000);
