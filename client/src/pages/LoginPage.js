@@ -9,6 +9,7 @@ export default function LoginPage() {
     const [redirect,setRedirect] = useState(false);
     const {setUserInfo} = useContext(UserContext);
 
+    //ev stands for event
     async function login(ev) {
         ev.preventDefault();
         const response = await fetch('http://localhost:4000/login', {
