@@ -31,7 +31,7 @@ export default function Header() {
         <Link to="/" className="logo">My Blog</Link>
         <nav>
           {username && (
-            <>
+            <>              
               <Link to="/create">Create new post</Link>
               <a onClick={logout}>Logout</a>
             </>
