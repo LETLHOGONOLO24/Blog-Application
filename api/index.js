@@ -21,10 +21,6 @@ app.use(express.json());
 app.use(cookieParser());
 app.use('/uploads', express.static(__dirname + '/uploads'));
 
-app.get('/', (req,res) => {
-    res.setHeader("Access-Control-Allow-Credentials","true");
-    res.send("API is running...");
-});
 
 mongoose.connect('mongodb+srv://pitroschauke24:Menjukapoy123@cluster0.gtfqfot.mongodb.net/?retryWrites=true&w=majority');
 
