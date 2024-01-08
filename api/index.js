@@ -14,7 +14,6 @@ const fs = require('fs');
 
 const salt = bcrypt.genSaltSync(10);
 const secret = 'asdfe45we45w34wegw34werjktjwertkj';
-require("dotenv").config();
 
 //Middleware
 app.use(cors({credentials:true,origin:'http://localhost:3000'}));
@@ -141,4 +140,4 @@ app.get('/post/:id', async (req,res) => {
     res.json(postDoc)
 });
 
-app.listen(process.env.PORT || 4000);
+app.listen(4000);
