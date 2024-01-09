@@ -11,16 +11,22 @@ const cookieParser = require('cookie-parser');
 const multer = require('multer');
 const uploadMiddleware = multer({ dest: 'uploads/' });
 const fs = require('fs');
+const path = require('path');
 
 const salt = bcrypt.genSaltSync(10);
 const secret = 'asdfe45we45w34wegw34werjktjwertkj';
+
 
 //Middleware
 app.use(cors({credentials:true,origin:['http://localhost:3000', 'https://myblog-yi4b.onrender.com/']}));
 app.use(express.json());
 app.use(cookieParser());
 app.use('/uploads', express.static(__dirname + '/uploads'));
+app.use(express.static(path.join(__dirname, "./client/buiid")));
 
+app.get("*", function(req,res) {
+    res.sendFile(path.join(__dirname, "./client/build/index.html"));
+});
 
 mongoose.connect('mongodb+srv://pitroschauke24:Menjukapoy123@cluster0.gtfqfot.mongodb.net/?retryWrites=true&w=majority');
 
