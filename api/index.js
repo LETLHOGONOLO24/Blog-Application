@@ -18,15 +18,14 @@ const secret = 'asdfe45we45w34wegw34werjktjwertkj';
 
 
 //Middleware
-
-app.use("/", (req,res) => {
-    res.send("Server is running.");
-});
-
 app.use(cors({credentials:true,origin:['http://localhost:3000', 'https://myblog-yi4b.onrender.com/']}));
 app.use(express.json());
 app.use(cookieParser());
 app.use('/uploads', express.static(__dirname + '/uploads'));
+
+app.use('/', (req,res) => {
+    res.send("Server is running.");
+});
 
 mongoose.connect('mongodb+srv://pitroschauke24:Menjukapoy123@cluster0.gtfqfot.mongodb.net/?retryWrites=true&w=majority');
 
