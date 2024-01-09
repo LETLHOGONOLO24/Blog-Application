@@ -146,4 +146,4 @@ app.get('/post/:id', async (req,res) => {
     res.json(postDoc)
 });
 
-app.listen(4000);
+app.listen(4000, console.log("Server has started on port 4000"));
