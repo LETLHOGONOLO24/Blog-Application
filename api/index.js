@@ -18,6 +18,11 @@ const secret = 'asdfe45we45w34wegw34werjktjwertkj';
 
 
 //Middleware
+
+app.use("/", (req,res) => {
+    res.send("Server is running.");
+});
+
 app.use(cors({credentials:true,origin:['http://localhost:3000', 'https://myblog-yi4b.onrender.com/']}));
 app.use(express.json());
 app.use(cookieParser());
