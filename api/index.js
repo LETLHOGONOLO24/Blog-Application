@@ -22,10 +22,10 @@ app.use(cors({credentials:true,origin:['http://localhost:3000', 'https://myblog-
 app.use(express.json());
 app.use(cookieParser());
 app.use('/uploads', express.static(__dirname + '/uploads'));
-app.use(express.static(path.join(__dirname, "./client/buiid")));
+app.use(express.static(path.join(__dirname, "../client/buiid")));
 
 app.get("*", function(req,res) {
-    res.sendFile(path.join(__dirname, "./client/build/index.html"));
+    res.sendFile(path.join(__dirname, "../client/build/index.html"));
 });
 
 mongoose.connect('mongodb+srv://pitroschauke24:Menjukapoy123@cluster0.gtfqfot.mongodb.net/?retryWrites=true&w=majority');
